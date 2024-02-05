@@ -208,7 +208,7 @@ def display_maze(maze, gamma, N):
                 print("hi")            
                 state_values=solve_GUI(N,gamma,maze,surface)
                 
-                value_iteration.solve(N,gamma,maze,surface)
+                value_iteration.solve(N,gamma,maze)
 
                 solved =True
                 print("helloooo")
@@ -246,4 +246,4 @@ maze = [['B', '.', 'B', '.', '10', '.', '.'],
         ['.', '.', '.', 'B', '.', '.', '.'],
         ['.', '.', '100', '.', 'B', '.', '.']]
 
-# display_maze(maze,gamma, N)
+display_maze(maze,gamma, N)
